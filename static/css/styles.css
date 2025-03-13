@@ -207,6 +207,13 @@ footer {
 }
 
 .footer-github {
+    margin-top: 0;
+}
+
+.github-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     margin-top: 10px;
 }
 
