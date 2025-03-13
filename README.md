@@ -1,5 +1,7 @@
 # Reinforcement Learning Grid World
 
+[繁體中文](README_zh.md) | [English](README.md)
+
 This project implements an interactive grid world environment to demonstrate and compare different reinforcement learning algorithms, including policy evaluation, policy improvement, and value iteration.
 
 ## Features
