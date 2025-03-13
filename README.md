@@ -1,8 +1,8 @@
 # Reinforcement Learning Grid World
 
-[繁體中文](README_zh.md) | [English](README.md)
+This repository contains the implementation of my homework assignment (HW1) for the Master's level **Deep Reinforcement Learning (深度強化學習)** course at **National Chung Hsing University (NCHU)**. The project implements and visualizes fundamental reinforcement learning algorithms in a Grid World environment, allowing users to interact with and compare the performance of different methods including policy evaluation, policy improvement, and value iteration.
 
-This project implements an interactive grid world environment to demonstrate and compare different reinforcement learning algorithms, including policy evaluation, policy improvement, and value iteration.
+[繁體中文](README_zh.md) | [English](README.md)
 
 ## Features
 
