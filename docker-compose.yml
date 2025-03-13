@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  rl-grid-map:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+      - PIP_DEFAULT_TIMEOUT=100
+    command: >
+      sh -c "pip install --upgrade pip &&
+             pip install --no-cache-dir --retries 10 --timeout 60 -r requirements.txt &&
+             python -m flask run --host=0.0.0.0 --port=5000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
